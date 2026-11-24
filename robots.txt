@@ -1,0 +1,5 @@
+# Kanaye — règles d’exploration du site public
+User-agent: *
+Allow: /
+
+Sitemap: https://kanaye.est1.dev/sitemap.xml
