@@ -1,6 +1,6 @@
 # Kanaye — site vitrine
 
-Site vitrine statique pour **Kanaye**, la confiserie péi signée **M4PED**
+Site vitrine statique pour **Kanaye**, le concept de confiserie péi imaginé par l’équipe **P4DME**
 (projet étudiant, Challenge Food Entrepreneur, ESIROI — Université de La
 Réunion).
 
@@ -14,6 +14,8 @@ tout est modifiable directement dans les fichiers, sans rien installer.
 ```
 kanaye-website/
 ├── index.html              ← tout le contenu et le texte du site
+├── robots.txt              ← règles d’exploration et lien vers le sitemap
+├── sitemap.xml             ← URL canonique du site
 ├── assets/
 │   ├── css/style.css       ← couleurs, typographie, mise en page, animations
 │   ├── js/main.js          ← menu mobile, effets d'interaction
@@ -91,6 +93,10 @@ Points à personnaliser avant une mise en ligne définitive :
 - **Nutri-Score** : le score affiché est une **estimation théorique de
   laboratoire, non certifiée** (précisé sur le site et dans le PDF). À
   remplacer par une valeur certifiée avant toute vente réelle.
+
+### Référencement
+
+La page principale possède un titre et une description propres au projet étudiant, une URL canonique, des métadonnées de partage et des données structurées `WebSite` / `WebPage`. Les fichiers `robots.txt` et `sitemap.xml` sont copiés dans l'image Docker et publiés à la racine du domaine. Le site reste une présentation du projet : il ne propose pas de commande en ligne.
 
 ## 🎨 Modifier les couleurs et les polices
 
